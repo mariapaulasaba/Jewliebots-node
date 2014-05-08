@@ -1,0 +1,391 @@
+
+@CHARSET "UTF-8";
+
+
+/*Dropdown box*/
+.sbHolder{
+	height: 32px;
+	width: 160px;
+    border-radius: 5px;
+	font-size: 14px;
+	position: relative;
+    margin-top: 10px;  
+}
+
+/*Main text position*/
+.sbSelector{
+	display: block;
+	width: 160px;
+	height: 30px;
+	left: 0;
+	line-height: 30px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 10px;
+	top: 0;
+}
+
+/*Dropdown List*/
+.sbOptions{
+	background-color: #fff;
+    border-radius: 1px;
+	list-style: none;
+	left: -1px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	width: 160px;
+	z-index: 1;
+    overflow-y: auto;
+}
+
+.sbOptions a{
+	display: block;
+	outline: none;
+	padding: 12px 0px 07px 12px;
+    margin-top: -16px; 
+    height: 18px;
+}
+.sbOptions a:link, .sbOptions a:visited{
+	color: #7e7d7d;
+	text-decoration: none;
+}
+
+/*Arrows
+.sbToggle{
+	display: block;
+	height: 30px;
+	outline: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30px;	
+    background: url(../img/select-icons.png) 0 -116px no-repeat; 
+}
+
+.sbToggle:hover{
+    background: url(../img/select-icons.png) 0 -167px no-repeat;
+}
+.sbToggleOpen{
+	background: url(../img/select-icons.png) 0 -16px no-repeat;
+}
+.sbToggleOpen:hover{
+	background: url(../img/select-icons.png) 0 -66px no-repeat;
+}
+*/
+
+
+
+
+
+/*CONDITION*/
+.step1 .sbHolder{
+	background-color: #f4ebf8;
+	border: 1px solid #8766AC;
+}
+.step1 .sbSelector:link, .sbSelector:visited{
+    /*Main text COLOR*/
+    color:#585858;
+	outline: none;
+	text-decoration: none;
+}
+.step1 .sbSelector:hover{
+    color:#8766AC;
+	outline: none;
+	text-decoration: none;
+}
+.step1 .sbOptions a.sbFocus{
+    font-weight: bold;
+   /*List Mouse Over COLORS*/
+	color: #8766AC;
+    background-color: #f4ebf8;
+}
+.step1 .sbOptions a{
+   /*List LINE COLOR*/
+	border-bottom: solid 1px #f4ebf8;
+}
+.step1 .sbOptions{
+   /*List BORDER COLOR*/
+   border: solid 1px #8766AC;
+}
+.step1 .sbOptions a.sbFocus{
+    font-weight: bold;
+   /*List Mouse Over COLORS*/
+	color: #8766AC;
+    background-color: #f4ebf8;
+}
+
+/*HOW IS THE CONDITION*/
+.step2 .sbHolder{
+	background-color: #ffebf8;
+	border: 1px solid #F91C9B;
+}
+.step2 .sbSelector:link, .sbSelector:visited{
+    /*Main text COLOR*/
+    color:#585858;
+	outline: none;
+	text-decoration: none;
+}
+.step2 .sbSelector:hover{
+    color:#F91C9B;
+	outline: none;
+	text-decoration: none;
+}
+.step2 .sbOptions a.sbFocus{
+    font-weight: bold;
+   /*List Mouse Over COLORS*/
+	color: #F91C9B;
+    background-color: #ffebf8;
+}
+.step2 .sbOptions a{
+   /*List LINE COLOR*/
+	border-bottom: solid 1px #ffebf8;
+}
+.step2 .sbOptions{
+   /*List BORDER COLOR*/
+   border: solid 1px #F91C9B;
+}
+.step2 .sbOptions a.sbFocus{
+    font-weight: bold;
+   /*List Mouse Over COLORS*/
+	color: #F91C9B;
+    background-color: #ffebf8;
+}
+
+/*LED*/
+.step3 .sbHolder{
+	background-color: #ffe9e8;
+	border: 1px solid #F1625E;
+}
+
+.step3 .sbSelector:link, .sbSelector:visited{
+    /*Main text COLOR*/
+    color:#585858;
+	outline: none;
+	text-decoration: none;
+}
+.step3 .sbSelector:hover{
+    color:#F1625E;
+	outline: none;
+	text-decoration: none;
+}
+.step3 .sbOptions a.sbFocus{
+    font-weight: bold;
+   /*List Mouse Over COLORS*/
+	color: #F1625E;
+    background-color: #ffe9e8;
+}
+.step3 .sbOptions a{
+   /*List LINE COLOR*/
+	border-bottom: solid 1px #ffe9e8;
+}
+.step3 .sbOptions{
+   /*List BORDER COLOR*/
+   border: solid 1px #F1625E;
+}
+.step3 .sbOptions a.sbFocus{
+    font-weight: bold;
+   /*List Mouse Over COLORS*/
+	color: #F1625E;
+    background-color: #ffe9e8;
+}
+
+
+
+
+/*MODE*/
+.step4 .sbHolder{
+	background-color: #f2fce7;
+	border: 1px solid #AFD46D;
+}
+
+.step4 .sbSelector:link, .sbSelector:visited{
+    /*Main text COLOR*/
+   color:#585858;
+	outline: none;
+	text-decoration: none;
+}
+.step4 .sbSelector:hover{
+    color:#9ec160;
+	outline: none;
+	text-decoration: none;
+}
+.step4 .sbOptions a.sbFocus{
+    font-weight: bold;
+   /*List Mouse Over COLORS*/
+	color: #9ec160;
+    background-color: #f2fce7;
+}
+.step4 .sbOptions a{
+   /*List LINE COLOR*/
+	border-bottom: solid 1px #f2fce7;
+}
+.step4 .sbOptions{
+   /*List BORDER COLOR*/
+   border: solid 1px #AFD46D;
+}
+.step4 .sbOptions a.sbFocus{
+    font-weight: bold;
+   /*List Mouse Over COLORS*/
+	color: #AFD46D;
+    background-color: #f2fce7;
+}
+
+
+/*TIMES BLINKING*/
+.step5 .sbHolder{
+    /*box backgroundCOLOR*/
+	background-color: #fffae8;
+	border: 1px solid #feea00;
+}
+.step5 .sbSelector:link, .sbSelector:visited{
+    /*Main text COLOR*/
+    color:#585858;
+	outline: none;
+	text-decoration: none;
+}
+.step5 .sbSelector:hover{
+    color:#fed700;
+	outline: none;
+	text-decoration: none;
+}
+.step5 .sbOptions a.sbFocus{
+    font-weight: bold;
+   /*List Mouse Over COLORS*/
+	color: #feea00;
+    background-color: #fffae8;
+}
+.step5 .sbOptions a{
+   /*List LINE COLOR*/
+	border-bottom: solid 1px #fffae8;
+}
+.step5 .sbOptions{
+   /*List BORDER COLOR*/
+   border: solid 1px #feea00;
+}
+.step5 .sbOptions a.sbFocus{
+    font-weight: bold;
+   /*List Mouse Over COLORS*/
+	color: #fed700;
+    background-color: #fffae8;
+}
+
+
+/*COLOR */
+.step6 .sbHolder{
+	background-color: #f2fafd;
+	border: 1px solid #6cc6f5;
+}
+
+.step6 .sbSelector:link, .sbSelector:visited{
+    /*Main text COLOR*/
+    color:#585858;
+	outline: none;
+	text-decoration: none;
+}
+.step6 .sbSelector:hover{
+    color:#6cc6f5;
+	outline: none;
+	text-decoration: none;
+}
+.step6 .sbOptions a.sbFocus{
+    font-weight: bold;
+   /*List Mouse Over COLORS*/
+	color: #F1625E;
+    background-color: #f2fafd;
+}
+.step6 .sbOptions a{
+   /*List LINE COLOR*/
+	border-bottom: solid 1px #f2fafd;
+}
+.step6 .sbOptions{
+   /*List BORDER COLOR*/
+   border: solid 1px #6cc6f5;
+}
+.step6 .sbOptions a.sbFocus{
+    font-weight: bold;
+   /*List Mouse Over COLORS*/
+	color: #6cc6f5;
+    background-color: #f2fafd;
+}
+
+
+/* NEXT ACTION WITHIN A STEP */
+.step7 .sbHolder{
+	background-color: #ffebf8;
+	border: 1px solid #F91C9B;
+}
+
+.step7 .sbSelector:link, .sbSelector:visited{
+    /*Main text COLOR*/
+    color:#585858;
+	outline: none;
+	text-decoration: none;
+}
+.step7 .sbSelector:hover{
+    color:#F91C9B;
+	outline: none;
+	text-decoration: none;
+}
+.step7 .sbOptions a.sbFocus{
+    font-weight: bold;
+   /*List Mouse Over COLORS*/
+	color: #F91C9B;
+    background-color: #ffebf8;
+}
+.step7 .sbOptions a{
+   /*List LINE COLOR*/
+	border-bottom: solid 1px #ffebf8;
+}
+.step7 .sbOptions{
+   /*List BORDER COLOR*/
+   border: solid 1px #F91C9B;
+}
+.step7 .sbOptions a.sbFocus{
+    font-weight: bold;
+   /*List Mouse Over COLORS*/
+	color: #F91C9B;
+    background-color: #ffebf8;
+}
+
+
+
+/* WAIT DROPDOWN */
+.step8 .sbHolder{
+	background-color: #fff6eb;
+	border: 1px solid #F99F1C;
+}
+
+.step8 .sbSelector:link, .sbSelector:visited{
+    /*Main text COLOR*/
+    color:#585858;
+	outline: none;
+	text-decoration: none;
+}
+.step8 .sbSelector:hover{
+    color:#F99F1C;
+	outline: none;
+	text-decoration: none;
+}
+.step8 .sbOptions a.sbFocus{
+    font-weight: bold;
+   /*List Mouse Over COLORS*/
+	color: #F99F1C;
+    background-color: #fff6eb;
+}
+.step8 .sbOptions a{
+   /*List LINE COLOR*/
+	border-bottom: solid 1px #fff6eb;
+}
+.step8 .sbOptions{
+   /*List BORDER COLOR*/
+   border: solid 1px #F99F1C;
+}
+.step8 .sbOptions a.sbFocus{
+    font-weight: bold;
+   /*List Mouse Over COLORS*/
+	color: #F99F1C;
+    background-color: #fff6eb;
+}
