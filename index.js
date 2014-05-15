@@ -34,7 +34,11 @@ app.post('/file', function(req, res){
 
 app.get('/', function(req,res){
 	res.sendfile(__dirname + '/views/index.html');
-})
+});
+
+app.get('/bots', function(req, res){
+    res.sendfile(__dirname + '/views/bots.html');
+});
 
 app.get('/botcode.ino', function(req, res) {  
 		  console.log("Got request /botcode.ino: " + tweetscore);

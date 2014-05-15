@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="google-site-verification" content="BJwXJy-hIbIv8nI4MdnGR1-XxX6k_YxJhNXCPS0RYHQ" />
+		<meta charset="utf-8" /
+		<meta name="Jewliebots Code Generator" />
+		<meta author="Maria Paula Saba, Sara Chipps" />
+		<title>JewlieBots</title>
+        <link rel="shortcut icon" href="img/jewlie.ico" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/selectbox.css" >
+		<link rel="stylesheet" type="text/css" href="spectrum/spectrum.css" >
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>        
+        <script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>   
+        <script type="text/javascript" src="spectrum/spectrum.js"></script>
+        <script type="text/javascript" src="js/arduino.js"></script>
+    </head>
+	
+	<body>
+		<div id="container">
+		<header>
+			<a href="#"><img id="logo" alt="Jewliebots" title="Jewliebots" src="img/logo.png" /></a>
+			<nav>
+				<ul>
+					<li><a href="/">WHAT IT IS</a></li>	
+					<li ><a href="#" class="menuSelected">PROGRAM</a></li>	
+					<li><a href="#">LEARN</a></li>	
+					<li><a href="#">GALLERY</a></li>	
+				</ul>	
+			</nav>
+			<div id="register">
+				<ul>
+					<li><a href="#">LOGIN</a></li>	
+					<img src="img/star.png" />
+					<li><a href="#">REGISTER</a></li>	
+				</ul>				
+			</div>
+		</header>
+
+		<div id="main">
+			<section>
+			 	<h2>Lily Jewlie</h2>	
+			 	<div class="box">
+			     <p id="intro">Lily Jewlie is a bracelet with light-colored flowers. It is made of 5 RGB LEDs, 1 motion sensor and 1 button. The LEDs can change colors and blinking speed and they can react to movement and button press!</p>
+				 <figure>
+                    <img src="img/lilly.jpg" />
+				 </figure>
+				</div>
+		 		<button class="action" id="play"><!--img src="img/play.png" /-->GETTING STARTED</button>
+				<button class="action" id="code"><!--img src="img/brackets.png" /-->DOWNLOAD CODE</button>  	
+				<!--form id="codeSubmit" target="_blank" style="display:none" action ="code.php" method = "post">
+						<input id="codeResult" type="hidden" style="display:none" name="result" value="" />	    
+ 				</form>	 -->				
+			</section>
+
+			<section id="sketch_area">
+				<h2>New Program</h2>	
+ 		 		<button id="new">NEW</button>
+		 		<button id="save">SAVE</button>          
+                <div class="box" id="sketch"> 
+                    <div id="setup_code">
+						<div class="bar">
+							<p id="setupLabel">SETUP</p>
+						</div>
+						<p class="comments">This first part runs once, every time you turn jewlie on.</p>    
+						<div class="step1">
+							<select name="onStart" class="setupStep" id="setup-0" > 
+								<option value="step">ON START</option>
+								<option value="delete">DELETE SETUP</option>
+							</select>
+						</div>
+						<div class="step3">
+							<select name="addLed" class="setupStep" id="setup-1" >    
+								<option value="5">ALL LEDS</option>
+							</select>	
+						</div>       
+						<div class="step4">
+							<select name="addMode" class="setupStep" id="setup-2" >    
+								<option value="blinkSlow">BLINK SLOW</option>
+							</select>	
+						</div>   						
+						<div class="step5">
+							<select name="addColor" class="setupStep" id="setup-4" >    
+								<option value="255,0,0">White</option>
+							</select>	
+						</div>   								    
+						<div class="step6">
+							<select name="addTimes" class="setupStep" id="setup-3" >    
+								<option value="1000">1 SECOND</option>
+							</select>	
+						</div>
+								                     
+                    </div>
+                    <div id="loop_code"> 
+						 <div class="bar">
+							<p id="loopLabel">LOOP</p>
+						 </div>  
+						<p class="comments">This part of the code is called loop and it will always happen.</p>                       
+                    </div>	
+					<div id="button_code"> 
+						<div class="bar">
+							<p id="buttonLabel">BUTTON</p>
+						</div>  
+						<p class="comments">This is for button reactions.</p>                            
+					</div>
+					<div id="sensor_code"> 
+						<div class="bar">
+							<p id="sensorLabel">SENSOR</p>
+						</div>  
+						<p class="comments">This is for sensor reactions.</p>                            
+					</div>	
+            </section>
+
+
+			<aside>
+			 	<h2>Examples</h2>
+			 		<div class="box_aside">
+						<ul>
+							<li><a href="#" id="lightLoop">BLUE LIGHT LOOP</a></li>	
+							<li><a href="#" id="buttonExample">SINGLE CLICK BLINK</a></li>	
+							<li><a href="#">MOTION SENSOR</a></li>	
+							<li><a href="#" id="rainbow">RAINBOW</a></li>	
+						</ul>				 			
+			 		</div>	
+
+
+			 	<h2>Popular</h2>	
+			 		<div class="box_aside">
+						<ul>
+							<li><a href="#">CRAZY STAR</a></li>	
+							<li><a href="#">I LOVE YOU</a></li>	
+							<li><a href="#">RAINBOW RAIN</a></li>	
+							<li><a href="#">BFF BRACELET</a></li>	
+						</ul>
+			 		</div>	
+
+			</aside>
+				
+
+
+		</div>	
+		<footer>
+			<div id="wrapper"><ul>
+				<li><a href="#">ABOUT</a></li>	
+					<img src="img/diamond.png" />
+				<li><a href="#">FAQ</a></li>	
+					<img src="img/diamond.png" />
+				<li><a href="#">PRESS</a></li>	
+					<img src="img/diamond.png" />
+				<li><a href="#">CONTACT</a></li>	
+			</ul>	
+            </div>
+		</footer>	
+		</div>
+        <script type="text/javascript" src="js/script.js"></script>	
+	</body>
+</html>
